@@ -21,7 +21,7 @@ def chat(message,history):
         yield response
 
 gr.ChatInterface(chat,
-                 title="InternLM2-Chat-1.8B-Self-Cognition",
+                 title="InternLM2-Chat-1.8B-4bit-Self-Cognition",
                 description="""
 InternLM is mainly developed by Shanghai AI Laboratory.  
                  """,
