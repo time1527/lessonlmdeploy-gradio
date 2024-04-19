@@ -1,4 +1,5 @@
 # https://github.com/InternLM/lmdeploy/blob/main/docs/zh_cn/serving/gradio.md
+import os
 import gradio as gr
 from lmdeploy import pipeline, TurbomindEngineConfig,GenerationConfig
 
