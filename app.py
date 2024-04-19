@@ -6,7 +6,7 @@ from lmdeploy import pipeline, TurbomindEngineConfig,GenerationConfig
 backend_config = TurbomindEngineConfig(cache_max_entry_count=0.01)
 
 # download internlm2 to the base_path directory using git tool
-base_path = './lesson-lmdeploy'
+base_path = './internlm2-chat-1_8b-4bit'
 os.system(f'git clone https://code.openxlab.org.cn/q4171119/lesson-lmdeploy.git {base_path}')
 os.system(f'cd {base_path} && git lfs pull')
 
