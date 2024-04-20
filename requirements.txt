@@ -1,1 +1,2 @@
 lmdeploy[all]==0.3.0
+gradio==4.10.0
