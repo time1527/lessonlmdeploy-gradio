@@ -1,7 +1,1 @@
-gradio==4.10.0
-transformers
-sentencepiece
-einops
-accelerate
-tiktoken
-bitsandbytes
+lmdeploy[all]==0.3.0
