@@ -13,7 +13,7 @@ model = AutoModelForCausalLM.from_pretrained(base_path,
                                              torch_dtype=torch.float16,
                                              device_map="auto")
 def chat(message,history):
-    for response,history in model.stream_chat(tokenizer,message,history,max_length=2048,top_p=0.7,temperature=1):
+    for response,history in model.stream_chat(tokenizer,message,history,max_length=2048,temperature=0.01):
         yield response
 
 gr.ChatInterface(chat,
