@@ -2,7 +2,7 @@
 import os
 import gradio as gr
 from lmdeploy import pipeline, TurbomindEngineConfig,GenerationConfig
-backend_config = TurbomindEngineConfig(cache_max_entry_count=0.01)
+backend_config = TurbomindEngineConfig(cache_max_entry_count=0.01,model_format="awq")
 
 # download internlm2 to the base_path directory using git tool
 base_path = './internlm2-chat-1_8b-4bit'
